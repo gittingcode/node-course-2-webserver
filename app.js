@@ -41,6 +41,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/portofolio', (req, res) => {
+    res.render('portofolio', {
+        data: 'Portofolio page'
+    });
+});
+
 app.get('/about', (req, res) => {
     res.render('about', {
         pageTitle: 'About Page'
